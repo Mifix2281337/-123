@@ -1,0 +1,360 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    z-index: 2;
+}
+
+input:focus {
+    outline: none;
+}
+
+/* Глобальные изменения */
+
+a {
+    text-decoration: none;
+    color: black;
+    
+}
+
+h2 {
+    font-weight: lighter;
+    font-size: 34px;
+}
+
+ul {
+    list-style-type: none;
+    font-size: 20px;
+}
+
+.minus::before {
+    content: "-";
+}
+
+.plus::before {
+    content: "+";
+}
+
+body {
+    height: 4800px;
+    font-family: 'Segoe UI';
+    font-weight: lighter;
+    
+}
+
+/* Настройки header */
+
+header {
+    width: 100%;
+    margin: 0 auto;
+    font-size: 16px;
+    background: url(background.png) no-repeat ;
+}
+
+.header_up, .header_down {
+    display: flex;
+    align-items: center; /* Центрируем содержимое вертикально */
+    justify-content: space-around; /* Пространство между элементами слева направо */
+    margin: 0 auto; ;
+    height: 62px;
+    background-color: white;
+}
+
+
+.header_up_left, .header_down_left, .header_up_right, .header_down_right
+{
+        text-align: left;
+        display: flex; /* Для выравнивания текста внутри блоков */
+
+}
+
+.header_up_right {
+     justify-content: center;
+     color: white;
+     cursor: pointer;
+     
+}
+
+.header_up_right p{
+     background-color: orange;
+     border-radius: 10px;
+     padding: 10px;
+}
+
+.header_down_right {
+    gap: 20px;
+}
+
+.header_down_right a {
+        
+    font-size: 14px;
+    cursor: pointer;
+    transition: transform .2s ease;
+}
+
+.header_down_right a:hover {
+    transform: translateY(-2px);
+}
+
+.photo-div-center, .photo-div, .class{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header_down {
+    box-shadow: 1px 0px 6px black;
+}
+
+.photo-div {
+    width: 100%;
+    background-size: cover;
+    height: 877px;
+    color: white;
+}
+
+.photo-div-center p{
+    padding: 10px;
+    font-size: 20px;
+    
+}
+
+.photo-div-center h1{
+    font-size: 56px;
+}
+
+
+/* Настройки main */
+
+.catalog-btn {
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.poligon, .div-catalog{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    margin-top: 100px;
+}
+
+.class {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.div-img {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.rassilka, .Onas_cont, .Osob_cont, .people_cont{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rassilka{
+    margin-top: 100px;
+    background-color: orange;
+    color: white;
+    height: 94px;
+    font-weight: bold;
+    
+}
+
+.rassilka div {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rassilka p {
+    width: 343px;
+    font-size: 18px;
+
+}
+
+.rassilka input, .rassilka button {
+    height: 41px;
+    width: 271px;
+    margin-left: 10px ;
+    padding: 10px;
+}
+
+.input_rassilka {
+    background-color: rgba(1, 1, 1, 0);
+    color: white;
+    border: 1px solid white;;
+}
+
+.input_rassilka::placeholder {
+    color: white;
+    padding: 10px;
+}
+
+.rassilka button {
+    background-color: white;
+    border: none;
+    color: black;
+    cursor: pointer;
+}
+
+#poligone_left, #poligone_right {
+    transition: all .2s ease;
+    cursor: pointer;
+}
+
+.Onas_cont h2, .Osob_cont h2 {
+
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 34px;
+}
+
+.Onas_cont p, .Osob_cont p {
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.Onas_cont{
+    width: 100%;
+    flex-direction: column;
+}
+
+.Onas, .Osob {
+    margin-top: 50px;
+    width: 50%;
+}
+.Osob_cont {
+    width: 100%;
+}
+
+.spis {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.catalog-cont {
+    width: 100%;
+    height: 580px;
+    background-color: #FBFBFB;
+}
+
+.catalog1 {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.catalog {
+    display: flex;
+    justify-content: space-between;
+}
+    
+
+.catalog-cont {
+    display: flex;
+    justify-content: center;
+}
+
+.navigation {
+    display: flex;
+    gap: 20px;
+}
+
+.catalog-card {
+    height: 100%;
+    flex-direction: row;
+    display: flex;
+    gap: 10px;
+
+}
+
+.card {
+    background-color: white;
+    width: 240px;
+    height: 370px;
+    order: 1;
+    transition: box-shadow .2s ease;
+    cursor: pointer;
+}
+
+.card:hover {
+    box-shadow: 3px -6px 20px 0px rgba(0, 0, 0, 0.1);
+}
+.card p {
+    margin-left: 10px;
+    font-size: 16px;
+}
+.price {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.svg {
+    margin-top: 20px;
+}
+
+.people_cont {
+    width: 100%;
+}
+
+.people {
+    width: 50%;
+    white-space: nowrap;
+}
+
+.people_card {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.name {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.job {
+    font-style: italic;
+    font-size: 12px;
+}
+
+.write {
+    background-color: orange;
+    border-radius: 100px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.people_cont, .people_card {
+    margin-top: 50px;
+}
+
+
+        
+
+        
