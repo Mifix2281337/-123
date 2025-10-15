@@ -465,6 +465,15 @@ footer {
     color: #303842;
 }
 
+footer a {
+    color: #8191A6;
+    cursor: pointer;
+}
+
+footer a:hover {
+    color: orange;
+}
+
 /* Медиа запросы */
 
 /* Планшеты */
